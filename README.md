@@ -18,8 +18,7 @@ https://github.com/driftyco/cordova-plugin-template
 0. Clone or download the repo:
 
 ```bash
-git clone git@github.com:driftyco/cordova-plugin-template.git
-cd cordova-plugin-template
+$ git clone git@github.com:driftyco/cordova-plugin-template.git
 ```
 
 You can also download the cordova-plugin-template to your local device manually.
@@ -34,15 +33,15 @@ $ cordova create hostApp hostApp hostApp
 2. Add platforms
 
 ```bash
-cd hostApp
-cordova platform add ios
+$ cd hostApp
+$ cordova platform add ios
 ```
 
 
 3. Install and Link your Plugin
 
 ```bash
-cordova plugin add --link ~/path/to/plugin
+$ cordova plugin add --link ~/path/to/plugin
 ```
 
 With the `--link` flag, Cordova creates a symbolic link to our plugin so we can update the plugin locally and rebuild without having to copy anything.
@@ -50,7 +49,7 @@ With the `--link` flag, Cordova creates a symbolic link to our plugin so we can 
 Note: to remove the plugin, use the symbolic name of the plugin instead:
 
 ```bash
-cordova plugin rm my-cordova-plugin
+$ cordova plugin rm my-cordova-plugin
 ```
 
 4. Testing process
@@ -58,8 +57,8 @@ cordova plugin rm my-cordova-plugin
 When our plugin is linked, we can make modifications to the native code in our plugin and rebuild our app immediately. If we make modifications to the JavaScript portion of our plugin, we need to reinstall the plugin (as far as I know, I am trying to find a way around this).
 
 ```bash
-cordova plugin rm my-cordova-plugin
-cordova plugin add --link ~/path/to/plugin
+$ cordova plugin rm my-cordova-plugin
+$ cordova plugin add --link ~/path/to/plugin
 ```
 
 5. Building our plugin
