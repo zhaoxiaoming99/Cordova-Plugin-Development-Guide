@@ -1,0 +1,2 @@
+# CordovaPluginTemplate
+CordovaPluginTemplate
