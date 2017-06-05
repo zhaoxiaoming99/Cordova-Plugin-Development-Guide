@@ -66,3 +66,16 @@ $ cordova plugin add --link ~/path/to/plugin
 5. Building our plugin
 
 Now you can plug-in you iPhone, then install and test the plugin.
+
+## Best practice
+
+### call js function inside the native code
+general usage
+```Objective-C
+NSString *js = [NSString stringWithFormat:@"cordova.fireDocumentEvent('mipush.%@',%@)", type, json];
+[SharedMiPushPlugin.commandDelegate evalJs:js];
+```
+maybe you can trigger a event 
+```Objective-C
+[self.commandDelegate evalJs:@"cordova.fireDocumentEvent('active');"];
+```
